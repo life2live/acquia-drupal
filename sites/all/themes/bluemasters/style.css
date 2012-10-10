@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);/*font-family: 'Oswald', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700italic,700,400italic);/*font-family: 'Lora', serif;*/
+@import url(http://fonts.googleapis.com/css?family=Stardos+Stencil:400,700);/*font-family: 'Stardos Stencil', cursive;*/
+
 * { margin:0; padding:0; }
 body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legend, dl, dt, dd, blockquote, applet, object { border:0; }
 
@@ -40,7 +44,12 @@ html[xmlns] .clearfix { display: block; }
 /*
  * Page
  */
-#page { background: url(images/bg.gif) repeat-x; }
+#page { background: url(#top {padding-bottom:16px; background: url(images/bg-over.jpg) 0 0 repeat-x;}
+
+/*
+ * Page
+ */
+#page {
 
 /*
  * Header-top
@@ -122,11 +131,7 @@ font-family:  Verdana, Arial,Helvetica,sans-serif; font-weight: 600; overflow: h
  * Home
  */
 #home-blocks-area { background:#ededed; border:1px solid #fff; border-radius: 5px; padding: 20px 19px 0 19px; 
-min-height:100px; overflow:hidden; clear:both; }
-
-/* Example overrides */
-
-.home-block-area { width: 290px; float:left; padding:0 10px; }
+min-height:100px; overflow:hiddeidth: 290px; float:left; padding:0 10px; }
 
 .home-block-area.first { padding-left:0; }
 
