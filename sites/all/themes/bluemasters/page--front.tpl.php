@@ -1,14 +1,14 @@
 <div id="page">
 
 <!--header-top-->
-<div id="header-top">
+<!--<div id="header-top">
     <div id="header-top-inside" class="clearfix">
     	
-        <!--header-top-inside-left-->
+        header-top-inside-left
         <div id="header-top-inside-left"><?php print render($page['header']); ?></div>
-        <!--EOF:header-top-inside-left-->
+        EOF:header-top-inside-left
         
-        <!--header-top-inside-left-feed-->
+        header-top-inside-left-feed
         <div id="header-top-inside-left-feed">
             <div id="topSocial">
             <ul>									
@@ -18,14 +18,14 @@
             </ul>
             </div>
         </div>
-        <!--EOF:header-top-inside-left-feed-->
+        EOF:header-top-inside-left-feed
         
-        <!--header-top-inside-left-right-->
+        header-top-inside-left-right
         <div id="header-top-inside-right"><?php print render($page['search_area']);?></div> 
-        <!--EOF:header-top-inside-left-right-->
+        EOF:header-top-inside-left-right
          
     </div>
-</div>
+</div>-->
 <!--EOF:header-top-->
     
 <div id="wrapper">
@@ -56,9 +56,11 @@
         
         <!--navigation-->
         <div id="navigation">
-			<?php $menu_name = variable_get('menu_main_links_source', 'main-menu');
+
+            <?php $menu_name = variable_get('menu_main_links_source', 'main-menu');
             $main_menu_tree = menu_tree($menu_name); 
             print drupal_render($main_menu_tree); ?>
+
         </div><!--EOF:navigation-->
        
     </div><!--EOF:header-->
@@ -66,31 +68,33 @@
     <div id="banner">
     <?php print render($page['banner']); ?>
     
+        
         <div class="main_view">
+            <div class="menu-1"><div class="menu-2"><div class="menu-3">
             <div class="window">
                 <div class="image_reel">
-                    <a href="<?php print url('node/3'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-3.jpg'; ?>"></a>
-                    <a href="<?php print url('node/2'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-2.jpg'; ?>"></a>
-                    <a href="<?php print url('node/1'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-1.jpg'; ?>"></a>
+                    <a href="<?php print url('node/3'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-3.jpg'; ?>"></a>
+                    <a href="<?php print url('node/2'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-2.jpg'; ?>"></a>
+                    <a href="<?php print url('node/1'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-1.jpg'; ?>"></a>
                 </div>
                 <div class="descriptions">
                     <div class="desc" style="display: none;">About Bluemasters</div>
                     <div class="desc" style="display: none;">Our Portfolio</div>
                     <div class="desc" style="display: none;">Creation of Beaches</div>
+                        <div class="paging">
+                        <a rel="1" href="#">1</a>
+                        <a rel="2" href="#">2</a>
+                        <a rel="3" href="#">3</a>
+                    </div>
                 </div>
             </div>
-        
-            <div class="paging">
-                <a rel="1" href="#">1</a>
-                <a rel="2" href="#">2</a>
-                <a rel="3" href="#">3</a>
-            </div>
+            </div></div></div>            
         </div>
     </div><!--EOF:banner-->
 
     <div id="home-blocks-area" class="clearfix">
     
-		<?php if ($messages): ?>
+	<?php if ($messages): ?>
         <div id="console" class="clearfix">
         <?php print $messages; ?>
         </div>

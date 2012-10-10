@@ -1,14 +1,14 @@
 <div id="page">
 
 <!--header-top-->
-<div id="header-top">
+<!--<div id="header-top">
     <div id="header-top-inside" class="clearfix">
     	
-        <!--header-top-inside-left-->
+        header-top-inside-left
         <div id="header-top-inside-left"><?php print render($page['header']); ?></div>
-        <!--EOF:header-top-inside-left-->
+        EOF:header-top-inside-left
         
-        <!--header-top-inside-left-feed-->
+        header-top-inside-left-feed
         <div id="header-top-inside-left-feed">
             <div id="topSocial">
             <ul>									
@@ -18,14 +18,14 @@
             </ul>
             </div>
         </div>
-        <!--EOF:header-top-inside-left-feed-->
+        EOF:header-top-inside-left-feed
         
-        <!--header-top-inside-left-right-->
+        header-top-inside-left-right
         <div id="header-top-inside-right"><?php print render($page['search_area']);?></div> 
-        <!--EOF:header-top-inside-left-right-->
+        EOF:header-top-inside-left-right
          
     </div>
-</div>
+</div>-->
 <!--EOF:header-top-->
 
 <div id="wrapper">
