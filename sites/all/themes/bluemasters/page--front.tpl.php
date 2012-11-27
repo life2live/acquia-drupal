@@ -1,7 +1,9 @@
 <div id="page">
 
+<!--top-->
 <div id="top"></div>
-    
+<!--EOF:top-->
+
 <!--header-top-->
 <!--<div id="header-top">
     <div id="header-top-inside" class="clearfix">
@@ -37,7 +39,7 @@
     	
         <!--logo-floater-->
         <div id="logo-floater"> 
-			<?php if ($logo): ?>
+            <?php if ($logo): ?>
             <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>">
             <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
             </a>
@@ -75,14 +77,14 @@
             <div class="menu-1"><div class="menu-2"><div class="menu-3">
             <div class="window">
                 <div class="image_reel">
-                    <a href="<?php print url('node/3'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-3.jpg'; ?>"></a>
-                    <a href="<?php print url('node/2'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-2.jpg'; ?>"></a>
-                    <a href="<?php print url('node/1'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-1.jpg'; ?>"></a>
+                    <a href="<?php print url('about'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-3.jpg'; ?>"></a>
+                    <a href="<?php print url('contact'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-2.jpg'; ?>"></a>
+                    <a href="<?php print url('smile'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slider/slide-image-1.jpg'; ?>"></a>
                 </div>
                 <div class="descriptions">
-                    <div class="desc" style="display: none;">About Bluemasters</div>
-                    <div class="desc" style="display: none;">Our Portfolio</div>
-                    <div class="desc" style="display: none;">Creation of Beaches</div>
+                    <div class="desc" style="display: none;">Child2Child</div>
+                    <div class="desc" style="display: none;">Project Bulgaria</div>
+                    <div class="desc" style="display: none;">Kinder Smiling</div>
                         <div class="paging">
                         <a rel="1" href="#">1</a>
                         <a rel="2" href="#">2</a>
@@ -113,7 +115,9 @@
             <?php print render($page['home_area_3_b']);?> 
         </div>
     </div>
-
+    
+    <div class="clearfooter"></div>
+    
 </div><!--EOF:wrapper-->
 
 <!--footer-->
